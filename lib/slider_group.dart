@@ -43,7 +43,11 @@ class _SliderGroupState extends State<SliderGroup> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Expanded(
-                  child: Center(child: PlatformText(widget.title)),
+                  child: Center(
+                      child: PlatformText(
+                    widget.title,
+                    textAlign: TextAlign.center,
+                  )),
                   flex: 1,
                 ),
                 Expanded(
