@@ -43,6 +43,9 @@ dependencies:
   #flutter_platform_widgets:
     #path: ../tmp/flutter_platform_widgets 
 
+  # desktop_window to set size of the main window
+  desktop_window: ^0.4.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
