@@ -19,8 +19,8 @@ class ConfigurationPage extends StatelessWidget {
             child: SliderGroup(
                 title: "Movement period (sec)",
                 initialValue: 60,
-                minValue: 10,
-                divisions: 29,
+                minValue: 30,
+                divisions: 9,
                 maxValue: 300)),
       ],
     );

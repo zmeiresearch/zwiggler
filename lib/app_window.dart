@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:desktop_window/desktop_window.dart';
 
-import 'state_provider.dart';
 import 'configuration_page.dart';
-import 'slider_group.dart';
 
 class WigglerAppWindow extends StatefulWidget {
   final materialTheme = ThemeData(
@@ -15,17 +13,18 @@ class WigglerAppWindow extends StatefulWidget {
 
   // Force light theme as text in dark mode is not rendered correctly,
   // at least in flutter 2.8.1
-  final cupertinoTheme = CupertinoThemeData(brightness: Brightness.light);
+  final cupertinoTheme = const CupertinoThemeData(
+      brightness: Brightness.light, scaffoldBackgroundColor: Color(0xfff0f0f0));
+
+  WigglerAppWindow({Key? key}) : super(key: key);
 
   @override
   State<WigglerAppWindow> createState() => _WigglerAppState();
 }
 
 class _WigglerAppState extends State<WigglerAppWindow> {
-  late Size _windowSize;
-
   Future _setWindowSize() async {
-    const appSize = Size(500, 300);
+    const appSize = Size(500, 200);
     DesktopWindow.setMinWindowSize(appSize);
     DesktopWindow.setMaxWindowSize(appSize);
     DesktopWindow.setWindowSize(appSize);
