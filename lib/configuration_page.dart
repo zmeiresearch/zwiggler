@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
 import 'slider_group.dart';
 
@@ -12,15 +11,16 @@ class ConfigurationPage extends StatelessWidget {
             padding: EdgeInsets.all(16.0),
             child: SliderGroup(
                 title: "Activity Time (min)",
-                initialValue: 20,
+                initialValue: 30,
                 minValue: 5,
-                maxValue: 1500)),
+                maxValue: 120)),
         Padding(
             padding: EdgeInsets.all(16.0),
             child: SliderGroup(
                 title: "Movement period (sec)",
                 initialValue: 60,
                 minValue: 10,
+                divisions: 29,
                 maxValue: 300)),
       ],
     );
