@@ -46,6 +46,9 @@ dependencies:
   # desktop_window to set size of the main window
   desktop_window: ^0.4.0
 
+  # System tray support package
+  system_tray: ^0.0.9
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
