@@ -48,7 +48,7 @@ class _SliderGroupState extends State<SliderGroup> {
                     widget.title,
                     textAlign: TextAlign.center,
                   )),
-                  flex: 1,
+                  flex: 2,
                 ),
                 Expanded(
                   child: Center(
@@ -64,7 +64,7 @@ class _SliderGroupState extends State<SliderGroup> {
                       },
                     ),
                   ),
-                  flex: 2,
+                  flex: 7,
                 ),
                 Expanded(
                   child: Center(child: Text(_value.round().toString())),
